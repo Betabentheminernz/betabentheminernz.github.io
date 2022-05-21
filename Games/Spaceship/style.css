@@ -3,6 +3,7 @@ html, body {
   text-align: center;
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 canvas {
@@ -11,4 +12,29 @@ canvas {
 
 .GoBackText {
   color: green;
+}
+.LinkList {
+  text-align: center;
+  list-style-position: inside;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+.Link {
+  float: left;
+}
+
+.ListLink {
+display: block;
+color: white;
+text-align: center;
+padding: 16px;
+text-decoration: none;
+}
+
+.LinkBarLogo {
+  float: left;
 }
