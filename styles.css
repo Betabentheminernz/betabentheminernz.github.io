@@ -39,3 +39,15 @@ text-decoration: none;
 .LinkBarLogo {
     float: left;
 }
+
+.GameSelectList {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li.GameSelectListLin {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  }
