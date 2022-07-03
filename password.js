@@ -5,5 +5,5 @@ if (password==pass1)
     alert('Correct password')
     else
     {
-        window.location="/incorrectpassword.html"
+        window.location="https://google.com"
     }
