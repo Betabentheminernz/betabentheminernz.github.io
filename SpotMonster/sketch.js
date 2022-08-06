@@ -1,19 +1,27 @@
-function setup() {
-  createCanvas(600, 580);
+function start() {
   textSize(30);
   textAlign(CENTER, CENTER);
   textFont('georgia');
   imageMode(CENTER);
   backgroundCreatures = [];
-  creature1 = createImg('monster1.png');
-  creature2 = createImg('monster2.png');
-  creature3 = createImg('monster3.png');
-  creature4 = createImg('monster4.png');
-  creature5 = createImg('monster5.png');
-  creature6 = createImg('monster6.png');
   creatures = [creature1, creature2, creature3, creature4, creature5, creature6];
-  setTimeout(() => display(), 2000);
+  setTimeout(() => display(), 150);
   noLoop();
+}
+
+function setup() {
+  createCanvas(600, 580);
+  start();
+  // reloadGame();
+}
+
+function preload() {
+  creature1 = loadImage('monster1.png');
+  creature2 = loadImage('monster2.png');
+  creature3 = loadImage('monster3.png');
+  creature4 = loadImage('monster4.png');
+  creature5 = loadImage('monster5.png');
+  creature6 = loadImage('monster6.png');
 }
 
 function draw() {
@@ -21,6 +29,12 @@ function draw() {
     munchEffect();
   } else {
     creaturesCheer();
+  }
+}
+
+function keyPressed() {
+  if (keyCode == 32) {
+      start();
   }
 }
 
@@ -57,7 +71,8 @@ function creaturesCheer() {
   fill('#FFD700');
   rect(300, 290, 400, 300, 0);
   textSize(60);
-  displayText('You found\nthem all!', 300, 290, 3);
+  displayText('You found\nthem all!', 300, 230, 3);
+  displayText('Press Space\nto restart!', 300, 370, 3);
 }
 
 function displayText(message, x, y, size) {
