@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 html, body {
   background-color: black;
   text-align: center;
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'poppins, sans-serif';
 }
 
 canvas {
@@ -38,4 +40,12 @@ text-decoration: none;
 
 .LinkBarLogo {
   float: left;
+}
+
+::selection {
+  background: #ffffff; /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  background: #ffffff; /* Gecko Browsers */
 }
