@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 html, body {
-  background-color: black;
+  background-image: linear-gradient(to top, #ffffff, #e8f5e1, #c5ecd5, #99e4d6, #65d9e2, #35cdec, #00c0f7, #00b0fd, #009dfc, #008afa, #0075f3, #045de9);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   text-align: center;
   margin: 0;
   padding: 0;
