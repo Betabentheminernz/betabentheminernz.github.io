@@ -1,3 +1,5 @@
+window.location.replace("http://bentheminernz.github.io");
+
 fetch('nav.html')
 .then(res => res.text())
 .then(text => {
