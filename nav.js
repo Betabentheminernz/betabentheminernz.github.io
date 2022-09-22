@@ -1,4 +1,4 @@
-window.location.replace("http://bentheminernz.github.io");
+window.location.replace("https://bentheminernz.github.io");
 
 fetch('nav.html')
 .then(res => res.text())
